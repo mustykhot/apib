@@ -5,7 +5,7 @@ const button = document.querySelector('button');
 button.addEventListener('click',(e)=>{
   e.preventDefault()
   const getbored = async() =>{
-    const response = await fetch('http://www.boredapi.com/api/activity/')
+    const response = await fetch('https://www.boredapi.com/api/activity/')
 
     if (response.status != 200) {
         throw new Error('cant fetch data')
